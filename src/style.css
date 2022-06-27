@@ -70,3 +70,7 @@ h4 {
   align-content: center;
   border-radius: 10px;
 }
+
+p {
+  text-align: center;
+}
