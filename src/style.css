@@ -1,16 +1,21 @@
 body {
   background-color: #adc2a9;
+  font-family: 'Montserrat', sans-serif;
 }
 
-label {
+.app {
   font-size: 30px;
-  font-family: "Kaushan Script", cursive;
-  font-family: "Lora", serif;
-  font-family: "Ms Madi", cursive;
-  font-family: "Permanent Marker", cursive;
-  font-family: "Shadows Into Light", cursive;
-  font-family: "Square Peg", cursive;
+  border: 2px solid #D3E4CD;
+  background-color: #D3E4CD;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 15px;
+  max-width: 500px;
 }
+.wholeCard {
+  margin-top: 0;
+}
+
 
 h2 {
   margin-left: 10px;
@@ -50,9 +55,6 @@ h4 {
   margin-top: -50px;
   font-size: 11px;
 }
-#search-city {
-  padding: 0 auto;
-}
 
 .temperature {
   color: rgb(33, 33, 33);
@@ -61,16 +63,16 @@ h4 {
   line-height: 1;
 }
 
-.search-container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 0;
-  padding-right: 20px;
-  text-align: center;
-  align-content: center;
-  border-radius: 10px;
+.city-container {
+  border-radius: 15px;
+  align-items: flex-end;
 }
 
-p {
+.col-2 {
+  align-items: baseline;
+}
+
+small {
   text-align: center;
+  font-size: 15px;
 }

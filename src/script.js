@@ -65,7 +65,7 @@ function userLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-let currentWeather = document.querySelector("#current-search");
+let currentWeather = document.querySelector("#local-search");
 currentWeather.addEventListener("click", userLocation);
 
 searchCity("Turks and Caicos Islands");
