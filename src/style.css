@@ -1,75 +1,72 @@
 body {
-    background-color: #adc2a9;
-  }
-  
-  label {
-    font-size: 30px;
-    font-family: "Kaushan Script", cursive;
-    font-family: "Lora", serif;
-    font-family: "Ms Madi", cursive;
-    font-family: "Permanent Marker", cursive;
-    font-family: "Shadows Into Light", cursive;
-    font-family: "Square Peg", cursive;
-  }
-  
-  h2 {
-    margin-left: 10px;
-    margin-top: 20px;
-    font-size: 25px;
-    font-weight: 400;
-    margin-bottom: 0px;
-  }
-  
-  h3 {
-    margin-left: 12px;
-    font-size: 11px;
-    font-weight: 10px;
-    margin-top: 0px;
-  }
-  
-  h4 {
-    text-align: right;
-    font-weight: 100px;
-    font-size: 10px;
-  }
-  .col-6 {
-    font-size: 35px;
-    margin-left: 20px;
-  }
-  
-  .units {
-    position: relative;
-    top: -34px;
-    font-size: 15px;
-  }
-  
-  .extra {
-    height: 100px;
-    background-color: transparent;
-    margin-left: 300px;
-    margin-top: -50px;
-    font-size: 11px;
-  }
-  #search-city {
-    padding: 0 auto;
-  }
-  
-  .temperature {
-    color: rgb(33, 33, 33);
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 1;
-  }
-  
-  .search-container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 0;
-    padding-right: 20px;
-    text-align: center;
-    align-content: center;
-    border-radius: 10px;
-  }
-  
- 
-  
+  background-color: #adc2a9;
+}
+
+label {
+  font-size: 30px;
+  font-family: "Kaushan Script", cursive;
+  font-family: "Lora", serif;
+  font-family: "Ms Madi", cursive;
+  font-family: "Permanent Marker", cursive;
+  font-family: "Shadows Into Light", cursive;
+  font-family: "Square Peg", cursive;
+}
+
+h2 {
+  margin-left: 10px;
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+h3 {
+  margin-left: 12px;
+  font-size: 11px;
+  font-weight: 10px;
+  margin-top: 0px;
+}
+
+h4 {
+  text-align: right;
+  font-weight: 100px;
+  font-size: 10px;
+}
+.col-6 {
+  font-size: 35px;
+  margin-left: 20px;
+}
+
+.units {
+  position: relative;
+  top: -34px;
+  font-size: 15px;
+}
+
+.extra {
+  height: 100px;
+  background-color: transparent;
+  margin-left: 300px;
+  margin-top: -50px;
+  font-size: 11px;
+}
+#search-city {
+  padding: 0 auto;
+}
+
+.temperature {
+  color: rgb(33, 33, 33);
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.search-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 20px;
+  text-align: center;
+  align-content: center;
+  border-radius: 10px;
+}
