@@ -1,25 +1,39 @@
 body {
-  background-color: #adc2a9;
+  background-color: rgb(95, 113, 97);
   font-family: 'Montserrat', sans-serif;
+}
+
+.author {
+  background-color: transparent;
+  max-width: 500px;
+  margin: 10px auto;
+  font-size: 13px;
+  color: rgb(207, 218, 200);
+  letter-spacing: 2px
 }
 
 .app {
   font-size: 30px;
-  border: 2px solid #D3E4CD;
-  background-color: #D3E4CD;
+  border: 2px solid rgb(232, 234, 230);
+  background-color: rgb(232, 234, 230);
   padding: 10px;
-  margin: 10px auto;
   border-radius: 15px;
-  max-width: 500px;
+  color: #000000;
 }
 .wholeCard {
   margin-top: 0;
 }
 
+.form-control {
+  letter-spacing: 2px
+}
+.form-control input-text{
+  letter-spacing: 2px;
+}
 
 h1 {
   margin-left: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 25px;
   font-weight: 400;
   margin-bottom: 0px;
@@ -30,27 +44,22 @@ h2 {
   font-size: 11px;
   font-weight: 10px;
   margin-top: 0px;
+  padding: 0 ;
 }
 
-h4 {
-  text-align: right;
-  font-weight: 100px;
-  font-size: 10px;
-}
+
 .col-6 {
-  font-size: 35px;
   margin-left: 20px;
 }
 
 .units {
   position: relative;
-  top: -34px;
-  font-size: 15px;
+  top: -32px;
+  font-size: 13px;
 }
 
 .extra {
   height: 100px;
-  background-color: transparent;
   margin-left: 300px;
   margin-top: -50px;
   font-size: 11px;
@@ -58,20 +67,74 @@ h4 {
 
 .temperature {
   color: rgb(33, 33, 33);
-  font-size: 60px;
-  font-weight: 400;
+  font-size: 50px;
+  font-weight: 350;
   line-height: 1;
 }
 
-.city-container {
-  border-radius: 15px;
+.search-container {
+  padding: 10px;
+  align-content: flex-end;
 }
 
-.col-2 {
-  align-items: baseline;
+.clearbox svg {
+  float: left;
+  font-weight: 350;
 }
 
-small {
-  text-align: center;
-  font-size: 15px;
+a {
+  text-decoration: none;
+  color: inherit;
 }
+a:-webkit-any-link {
+  cursor: vertical-text;
+}
+a:hover {
+  color: rgb(244, 247, 242);
+  text-shadow: rgb(205, 208, 203) 1px 0 10px;
+}
+
+.units a:hover{ 
+  color: #000000;
+  text-shadow: rgb(205, 208, 203) 1px 0 2px;
+}
+
+/* From uiverse.io by @alexmaracinaru */
+.cta {
+  border: none;
+  background: none;
+ }
+ 
+ .cta span {
+  padding-bottom: 0;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  padding-right: 0px;
+  text-transform: uppercase;
+  vertical-align: auto;
+ }
+
+ .hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+ }
+ 
+ .hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+ }
+ 
+ .cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+ }
