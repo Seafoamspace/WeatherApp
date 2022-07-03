@@ -30,7 +30,7 @@ body {
 .app {
   font-size: 30px;
   border: 2px solid rgb(232, 234, 230);
-  background-color: rgb(232, 234, 230);
+  background-color: rgba(232, 234, 230);
   padding: 10px;
   border-radius: 15px;
   color: #000000;
@@ -41,6 +41,7 @@ body {
 
 .form-control {
   letter-spacing: 2px;
+  text-transform: capitalize;
 }
 
 input::placeholder {
@@ -84,9 +85,10 @@ padding-bottom: 1px;
 }
 
 .units {
+  margin-left: -10px;
   position: relative;
-  top: -32px;
   font-size: 14px;
+
 }
 
 .extra {
@@ -99,9 +101,12 @@ padding-bottom: 1px;
 
 .temperature {
   color: rgb(33, 33, 33);
+  margin-right: 0;
   font-size: 50px;
   font-weight: 350;
   line-height: 1;
+  position: relative;
+  bottom: -25px;
 }
 
 .search-container {
@@ -109,9 +114,14 @@ padding-bottom: 1px;
   align-content: flex-end;
 }
 
-.clearbox svg {
+.clearbox img {
   float: left;
-  font-weight: 350;
+  margin-right: 10px;
+  max-height: 100px;
+  border-radius: 50%;
+  background: #cdd0cb;
+  box-shadow:  20px 20px 100px #aeb1ad,
+             -20px -20px 100px #ecefe9;
 }
 
 a {
