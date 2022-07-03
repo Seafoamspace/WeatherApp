@@ -66,17 +66,15 @@
         
     
         <div class="display">
-        <h1 id="cityDisplay">
+        <h1 id="cityDisplay"> ,<span id="state"></span>
+        </span>
 
          </h1>
     
      <h2 id= "dateTime">
          <div class = "row"> 
-            <div class = "col-12"
-             id= "date">
-             Time
-        
-             <span class = "analogClock"> </span>
+            <div class = "col-12">
+             Last updated: <span id="date" class = "analogClock"> </span>
             </div>
 
             <div class = "col-12"
@@ -92,6 +90,7 @@
             <div class="col-6">
              <div class="clearbox">
                  <svg 
+                    id="icon"
                     xmlns="http://www.w3.org/2000/svg" 
                     width="50" 
                     height="50"
@@ -111,13 +110,13 @@
 
                     <span class="units">
                         <a href="#" 
-                            id="celsius-link">
-                            °C
-                        </a> |
-            
-                        <a href="#" 
-                            id="fahrenheit-link">
-                            °F
+                        id="fahrenheit-link">
+                        °F
+                    </a> |
+                    
+                    <a href="#" 
+                    id="celsius-link">
+                    °C
                         </a>
                  </span>
                 </div>
