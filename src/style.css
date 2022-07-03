@@ -53,6 +53,7 @@ h1 {
   font-size: 25px;
   font-weight: 400;
   margin-bottom: 0px;
+  padding-bottom: 1px;
 }
 
 h2 {
@@ -65,6 +66,10 @@ h2 {
 
 h2:first-letter {
   text-transform: capitalize;
+}
+
+.col-12 {
+padding-bottom: 1px;
 }
 
 .col-12::first-letter {
@@ -118,12 +123,12 @@ a:-webkit-any-link {
 }
 a:hover {
   color: rgb(244, 247, 242);
-  text-shadow: rgb(205, 208, 203) 1px 0 10px;
+  text-shadow: rgb(255, 255, 255) 1px 0 15px;
 }
 
 .units a:hover{ 
   color: #000000;
-  text-shadow: rgb(205, 208, 203) 1px 0 2px;
+  text-shadow: rgb(5, 5, 5) 1px 0 10px;
 }
 
 /* From uiverse.io by @alexmaracinaru */

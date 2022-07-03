@@ -1,18 +1,7 @@
 function formatDate(timestamp) {
   let date = new Date(timestamp);
-  let hours = date.getHours();
-  if (hours < 10) {
-    hours = `0${hours}`;
-  }
-  if (hours > 12) {
-    hours -= 12;
-} else if (hours === 0) {
-   hours = 12;
-}
-  let minutes = date.getMinutes();
-  if (minutes < 10) {
-    minutes = `0${minutes}`;
-  }
+  let time = date.toLocaleString([], {hour: '2-digit', minute:'2-digit'})
+  let daze = new Date().toLocaleDateString();
   let days = [
       `Sunday`,
       `Monday`,
@@ -23,9 +12,8 @@ function formatDate(timestamp) {
       `Saturday`
     ];
     let day = days[date.getDay()];
-    return `${day} ${hours}:${minutes}`;
+    return `${daze}, ${day} ${time}`;
   }
-
   
   
  function searchLocation(position) {
