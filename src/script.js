@@ -13,47 +13,54 @@ function formatDate(timestamp) {
     ];
     let day = days[date.getDay()];
     return `${daze}, ${day} ${time}`;
-  }
+   }
   
+function formatDay(timestamp) {
+    let date = new Date(timestamp * 1000);
+    let day = date.getDay();
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   
-  
-  function showForecast(response) {
+    return days[day];
+}
+
+
+function showForecast(response) {
     let forecastDaily = response.data.daily;
 
     let forecast = document.querySelector("#forecast");
     
     let forecastHTML = `<div class="row">`;
-    forecastDaily.forEach(function (forecastDaily) {
+    forecastDaily.forEach(function (forecastDay, index) {
+      if (index < 6) {
       forecastHTML =
       forecastHTML + `
       <div class="col-2">
-        <div class="forecast-date">${forecastDaily.dt}</div>
+        <div class="forecast-date">${formatDay(forecastDay.dt)}</div>
         <img 
-          src ="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png";
+          src ="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png";
           alt=""
           width="42"
         />
 
         <div class="forecast-temp">
           <span class="forecast-temp-max">
-          ${forecastDaily.temp.max}° </span> "|"
+          ${Math.round(forecastDay.temp.max)}° </span>|
           <span class="forecast-temp-min">
-          ${forecastDaily.temp.min}°</span>
+          ${Math.round(forecastDay.temp.min)}°</span>
         </div>
       </div>
       `;
-    });
+    }
+  });
     
     
 forecastHTML = forecastHTML + `</div>`;
 forecast.innerHTML = forecastHTML;
-console.log(forecastHTML);
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "6b489563a4848d8f1450e42485d692d9";
-  let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
 axios.get(apiUrl).then(showForecast);
 }
 

@@ -144,6 +144,7 @@ a:hover {
 .forecast {
   margin-top: 20px;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .forecast-date {
@@ -152,11 +153,18 @@ a:hover {
 }
 
 .forecast-temp {
-  font-size: 13px;
+  font-size: 11px;
 }
 
 .forecast-temp-min {
   opacity: 0.5;
+}
+
+.forecast img {
+  border-radius: 50px;
+  background: linear-gradient(315deg, #dbdfd9, #b9bbb7);
+  box-shadow:  -20px -20px 44px #aeb1ad,
+               20px 20px 44px #ecefe9;
 }
 
 
