@@ -141,6 +141,26 @@ a:hover {
   text-shadow: rgb(5, 5, 5) 1px 0 10px;
 }
 
+.forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.forecast-date {
+  font-size: 13.5px;
+  opacity: 0.6;
+}
+
+.forecast-temp {
+  font-size: 13px;
+}
+
+.forecast-temp-min {
+  opacity: 0.5;
+}
+
+
+
 /* From uiverse.io by @alexmaracinaru */
 .cta {
   border: none;
