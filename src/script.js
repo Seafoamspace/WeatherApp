@@ -73,6 +73,8 @@ function displayWeather(response) {
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
   document.querySelector("#feels").innerHTML = Math.round(response.data.main.feels_like);
+  document.querySelector("#mint").innerHTML = Math.round(response.data.main.temp_min);
+
   document.querySelector("#descript").innerHTML =
   response.data.weather[0].description;
   document.querySelector("#date").innerHTML = formatDate(response.data.dt * 1000);
