@@ -23,7 +23,6 @@ function formatDay(timestamp) {
     return days[day];
 }
 
-
 function showForecast(response) {
     let forecastDaily = response.data.daily;
 
@@ -53,7 +52,6 @@ function showForecast(response) {
     }
   });
     
-    
 forecastHTML = forecastHTML + `</div>`;
 forecast.innerHTML = forecastHTML;
 }
@@ -63,7 +61,6 @@ function getForecast(coordinates) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
 axios.get(apiUrl).then(showForecast);
 }
-
 
 
 function displayWeather(response) {
@@ -85,8 +82,6 @@ function displayWeather(response) {
     document.querySelector("#icon").setAttribute("alt", response.data.weather[0].description);
     
   getForecast(response.data.coord);
-
-
   }
   
   function searchLocation(position) {
@@ -110,7 +105,6 @@ function hitSubmit(event) {
   searchCity(city);
 }
 
-
 function showfahrenheit(event) {
   event.preventDefault();
   document.querySelector("#temperature").innerHTML = Math.round(fahrenheitTemp);
@@ -131,4 +125,3 @@ let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", showfahrenheit);
 
 searchCity("Turks and Caicos Islands");
-
