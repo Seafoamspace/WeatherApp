@@ -18,7 +18,7 @@ function formatDate(timestamp) {
 function formatDay(timestamp) {
     let date = new Date(timestamp * 1000);
     let day = date.getDay();
-    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat","Sun"];
   
     return days[day];
 }
@@ -31,10 +31,10 @@ function showForecast(response) {
     
     let forecastHTML = `<div class="row">`;
     forecastDaily.forEach(function (forecastDay, index) {
-      if (index < 6) {
+      if (index < 5) {
       forecastHTML =
       forecastHTML + `
-      <div class="col-2">
+      <div class="col-2 forecastRow">
         <div class="forecast-date">${formatDay(forecastDay.dt)}</div>
         <img 
           src ="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png";
@@ -110,11 +110,6 @@ function hitSubmit(event) {
   searchCity(city);
 }
 
-function showCelsius(event) {
-  event.preventDefault();
-  let celsiusTemp = (fahrenheitTemp - 32) * 5/9;
-  document.querySelector("#temperature").innerHTML = Math.round(celsiusTemp);
-}
 
 function showfahrenheit(event) {
   event.preventDefault();
@@ -131,9 +126,6 @@ currentWeather.addEventListener("click", userLocation);
 
 let form = document.querySelector("#search-city");
 form.addEventListener("submit", hitSubmit);
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", showCelsius);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", showfahrenheit);

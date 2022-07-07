@@ -25,135 +25,114 @@
 
   </head>
   <body>
- <div class="author">
+     <div class="author">
         <div class = "app">
-            <div class = "wholeCard" >
-            <form id = "search-city">
-             <div class="search-container"> 
-                <div class = "row city-container"> 
-             <div class = "col-8">
-                <input 
-                type = "text" 
-                class="form-control"
-                id = "place-search" 
-                placeholder = "Enter city"
-                autocomplete = "off" 
-                 /> 
-          </div>
+           <div class = "wholeCard" >
+             <form id = "search-city">
+                 <div class="search-container"> 
+                     <div class = "row city-container"> 
+                            <div class = "col-8">
+                                <input 
+                                type = "text" 
+                                class="form-control"
+                                id = "place-search" 
+                                placeholder = "Enter city"
+                                autocomplete = "off"
+                                />
+                            </div>
 
-            <div class="col-2">
-                <button class="cta"
-                    id = "city-search"
-                    type = "submit"                   
-                    >
-                    <span class="hover-underline-animation">Search</span>
-                </button>
-            </div>
+                            <div class="col-2 citySearch">
+                                <button class="cta"
+                                    id = "city-search"
+                                    type = "submit"
+                                    >
+                                    <span class="hover-underline-animation">Search</span>
+                                </button>
+                            </div>
             
-            <div class="col-2">
-                <button class="cta"
-                    id = "local-search"
-                    type = "submit"
-                    >
-                    <span class="hover-underline-animation">Local</span> 
-                </button>
-            </div>
-             </div>
-            </div>
-         </form>
+                            <div class="col-2 localSearch">
+                                <button class="cta"
+                                    id = "local-search"
+                                    type = "submit"
+                                    >
+                                    <span class="hover-underline-animation">Local</span> 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
          
       
-
-        
+                <div class="display">
+                    <h1 id="cityDisplay">
+                    </h1>
     
-        <div class="display">
-        <h1 id="cityDisplay"> ,<span id="state"></span>
-        </span>
+                    <h2 id= "dateTime">
+                        <div class = "row"> 
+                            <div class = "col-12">
+                                Last updated: <span id="date" class = "analogClock"> </span>
+                            </div>
 
-         </h1>
-    
-     <h2 id= "dateTime">
-         <div class = "row"> 
-            <div class = "col-12">
-             Last updated: <span id="date" class = "analogClock"> </span>
-            </div>
-
-            <div class = "col-12"
-                id="smDescript">
-        
-            </div>
-        </div>
-    </h2> 
-    </div>
-    </br> 
-
-         <div class="row">
-            <div class="col-6">
-             <div class="clearbox">
-                <img src="" id="icon"/>
-
-                <div class="float-left">
-                    <span class="temperature" 
-                     id="temperature"> <strong>
-
-                     </strong>
-                    </span>
-
-                    <span class="units">
-                        <a href="#" 
-                        id="fahrenheit-link">
-                        °F
-                    </a> |
-                    
-                    <a href="#" 
-                    id="celsius-link">
-                    °C
-                        </a>
-                 </span>
+                            <div class = "col-12"
+                                id="smDescript">
+                            </div>
+                        </div>
+                    </h2> 
                 </div>
-            </div>
-        </div>
-        </div>
-    
-    </div> 
+                <hr style="height:1px; visibility:hidden;" /> 
 
-    <h3 class="extra">
-        <div class = "row"> 
-            <div class = "col-12">
-                <span id="percipitation">
-                </span>
-         </div>
+                <div class="row displayRow">
+                    <div class="col-6">
+                        <div class="clearbox">
+                            <img src="" id="icon"/>
+
+                            <div class="float-left">
+                             <span class="temperature" 
+                                 id="temperature"> <strong>
+                                     </strong>
+                                </span>
+
+                             <span class="units">
+                                  <a href="#" 
+                                     id="fahrenheit-link">
+                                     °F
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class = "col-6 extra">                       
+                        <div class = "humidity">
+                         Humidity: <span
+                         id= "humidity">
+                            </span>%
+                     </div>
+                
+                     <div class = "wind">
+                         Wind: <span
+                          id="wind"> 
+                         </span>mph
+                     </div>
+                    </div> 
+                </div>
+            </div> 
+            <div class="forecast"
+                id="forecast">
         
-            <div class = "col-12">
-             Humidity: <span
-             id= "humidity">
-                </span>%
-         </div>
-    
-         <div class = "col-12">
-             Wind: <span
-              id="wind"> 
-             </span>mph
-         </div>
-        </div> 
-    </h3> 
-
-<div class="forecast"
-        id="forecast">
-    
-</div>
-
-    </div>
-
-
+            </div>
+        
+            </div>
+     
 
     <script src="src/script.js"></script>
 
-  </body>
-  <span class ="source"><small>
-    <a 
-     href ="https://github.com/Seafoamspace/WeatherApp" target ="_blank">
+    
+    <span class ="source"><small>
+        <a 
+        href ="https://github.com/Seafoamspace/WeatherApp" target ="_blank">
         Open Source Code</a><span class="me">, by Christy Fountain</span></small>
     </span>
+</div>
+</body>
 
 </html>

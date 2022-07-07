@@ -33,7 +33,7 @@ body {
   background-color: rgba(232, 234, 230);
   padding: 10px;
   border-radius: 15px;
-  color: #000000;
+  color: #000000; 
 }
 .wholeCard {
   margin-top: 0;
@@ -55,6 +55,10 @@ h1 {
   font-weight: 400;
   margin-bottom: 0px;
   padding-bottom: 1px;
+}
+
+br {
+  line-height: 10px
 }
 
 h2 {
@@ -91,13 +95,25 @@ padding-bottom: 1px;
 
 }
 
+
+.displayRow {
+max-width:500px;
+max-height: 100px;
+flex-wrap: nowrap;
+
+
+}
+
 .extra {
-  height: 75px;
-  margin-left: 300px;
-  margin-top: -50px;
+  height: 100px;
   font-size: 12px;
   font-weight: 400;
+ text-align:left;
+ bottom: -26px;
+ position: relative;
 }
+
+
 
 .temperature {
   color: rgb(33, 33, 33);
@@ -145,6 +161,14 @@ a:hover {
   margin-top: 20px;
   text-align: center;
   padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.forecastRow {
+  width: 20%;
+  align-items: center;
 }
 
 .forecast-date {
@@ -161,10 +185,11 @@ a:hover {
 }
 
 .forecast img {
-  border-radius: 50px;
-  background: linear-gradient(315deg, #dbdfd9, #b9bbb7);
-  box-shadow:  -20px -20px 44px #aeb1ad,
-               20px 20px 44px #ecefe9;
+  align-self: center;
+  border-radius: 50%;
+  background: #cdd0cb;
+  box-shadow:  20px 20px 100px #aeb1ad,
+             -20px -20px 100px #ecefe9;
 }
 
 
