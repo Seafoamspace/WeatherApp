@@ -3,7 +3,7 @@
   <head>
       <meta charset="UTF-8" />
       
-    <title>Functional Weather App</title>
+    <title>Weather</title>
 
     
     
@@ -26,9 +26,9 @@
   </head>
   <body>
      <div class="author">
-        <div class = "app">
-           <div class = "wholeCard" >
-             <form id = "search-city">
+            <div class = "app">
+                <div class = "wholeCard" >
+                    <form id = "search-city">
                  <div class="search-container"> 
                      <div class = "row city-container"> 
                             <div class = "col-8">
@@ -60,79 +60,80 @@
                             </div>
                         </div>
                     </div>
-                </form>
+                    </form>
          
       
-                <div class="display">
-                    <h1 id="cityDisplay">
-                    </h1>
+                    <div class="display">
+                        <h1 id="cityDisplay">
+                        </h1>
     
-                    <h2 id= "dateTime">
-                        <div class = "row"> 
-                            <div class = "col-12">
-                                Last updated: <span id="date" class = "analogClock"> </span>
+                        <h2 id= "dateTime">
+                            <div class = "row"> 
+                                <div class = "col-12">
+                                    Last updated: <span id="date" class = "analogClock"> </span>
+                                </div>
+
+                                <div class = "col-12"
+                                    id="descript">
+                                </div>
                             </div>
-
-                            <div class = "col-12"
-                                id="smDescript">
-                            </div>
-                        </div>
-                    </h2> 
-                </div>
-                <hr style="height:1px; visibility:hidden;" /> 
-
-                <div class="row displayRow">
-                    <div class="col-6">
-                        <div class="clearbox">
-                            <img src="" id="icon"/>
-
-                            <div class="float-left">
-                             <span class="temperature" 
-                                 id="temperature"> <strong>
-                                     </strong>
-                                </span>
-
-                             <span class="units">
-                                  <a href="#" 
-                                     id="fahrenheit-link">
-                                     °F
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
+                        </h2> 
                     </div>
-                     <div class = "col-6 extra">                       
-                        <div class = "humidity">
-                         Humidity: <span
-                         id= "humidity">
-                            </span>%
-                     </div>
-                
-                     <div class = "wind">
-                         Wind: <span
-                          id="wind"> 
-                         </span>mph
-                     </div>
+
+                    <hr style="height:1px; visibility:hidden;" /> 
+
+                    <div class="row displayRow">
+                        <div class="col-6">
+                            <div class="clearbox">
+                                <img src="" id="icon"/>
+
+                                <div class="float-left">
+                                    <span class="temperature" 
+                                        id="temperature"> <strong>
+                                     </strong>
+                                    </span>
+
+                                    <span class="units" 
+                                             id="fahrenheit-link">
+                                            °F
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "col-6 extra">                       
+                            <div class = "humidity">
+                                Humidity: <span
+                                id= "humidity">
+                                </span>%
+                            </div>
+                            
+                            <div class = "wind">
+                                Wind: <span
+                                id="wind"> 
+                                </span>mph
+                            </div>
+                        </div>
+
+
                     </div> 
                 </div>
-            </div> 
-            <div class="forecast"
-                id="forecast">
-        
-            </div>
-        
-            </div>
-     
 
-    <script src="src/script.js"></script>
+                 <div class="forecast"
+                    id="forecast">
+            
+                </div>
+            </div> 
+        
+            <script src="src/script.js"></script>
 
     
-    <span class ="source"><small>
+            <span class ="source"><small>
         <a 
         href ="https://github.com/Seafoamspace/WeatherApp" target ="_blank">
-        Open Source Code</a><span class="me">, by Christy Fountain</span></small>
-    </span>
-</div>
-</body>
+             Open-Source Code</a><span class="me">, by Christy Fountain</span></small>
+            </span>
+        </div>
+    </body>
 
 </html>
