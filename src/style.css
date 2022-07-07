@@ -105,6 +105,7 @@ h2:first-letter {
   margin-left: -10px;
   position: relative;
   font-size: 14px;
+
 }
 
 .displayRow {
@@ -152,6 +153,7 @@ flex-wrap: nowrap;
 a {
   text-decoration: none;
   color: inherit;
+  display:inline-flex;
 }
 
 a:hover {
