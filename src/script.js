@@ -69,7 +69,6 @@ function displayWeather(response) {
   document.querySelector("#cityDisplay").innerHTML = response.data.name;
   //document.querySelector("#state").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(fahrenheitTemp);
-  console.log(response);
   
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
